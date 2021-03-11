@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Document</title>
+    <script>
+      function blinktext() {
+        var f = document.getElementById("bk");
+        setInterval(function () {
+          f.style.visibility = f.style.visibility == "hidden" ? "" : "hidden";
+        }, 500);
+      }
+      function blinktext1() {
+        var f = document.getElementById("bk1");
+        setInterval(function () {
+          f.style.visibility = f.style.visibility == "hidden" ? "" : "hidden";
+        }, 500);
+      }
+    </script>
+  </head>
+  <body style="text-align: center" onload="blinktext(),blinktext1()" ;>
+    <marquee behavior="alternate" direction="left">Text Blink in JS</marquee>
+    <h2 style="background-color: lightseagreen">
+      <p id="bk">Moto</p>
+    </h2>
+  </body>
+</html>

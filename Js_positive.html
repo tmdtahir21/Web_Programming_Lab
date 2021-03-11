@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Js Positive</title>
+    <script>
+      var v1 = parseInt(prompt("Enter a Number:"));
+      var v2 = parseInt(prompt("Enter a Number:"));
+      var v3 = parseInt(prompt("Enter a Number:"));
+      var v4 = parseInt(prompt("Enter a Number:"));
+      var v5 = parseInt(prompt("Enter a Number:"));
+      var zero;
+      var positive = 0;
+      var negative = 0;
+      numbers = new Array(v1, v2, v3, v4, v5);
+    </script>
+  </head>
+  <body>
+    <script>
+      for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] <br 0) {
+          negative = negative + 1;
+        }
+        document.write("Negative numbers:"+negative+"<br>");
+      }
+      for(var i=0;i<numbers.length;i++)
+      {
+          if(numbers[i]>0)
+          {
+              positive=positive+1;
+          }
+          document.write("Positive Numbers:"+positive+"<br>");
+      }
+      for(var i=0;i<numbers.length;i++)
+      {
+          if(numbers[i]==0)
+          {
+              zero=zero+1;
+          }
+          document.write("No of Zeros:"+zero+"<br>");
+      }
+    </script>
+  </body>
+</html>
